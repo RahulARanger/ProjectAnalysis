@@ -1,0 +1,129 @@
+@import "./bulma.css";
+@import "./bulma-page-loader.css";
+
+html {
+	overflow-y: auto; /* https://github.com/jgthms/bulma/issues/1293 */
+}
+
+* {
+	scrollbar-width: 3px;
+	scrollbar-color: #ff8800 transparent;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+	width: 3px;
+}
+
+*::-webkit-scrollbar-track {
+	background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+	background-color: #ff8800;
+	border-radius: 6px;
+	border: 2px groove transparent;
+}
+.overlay {
+	/* background-color: red; */
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background: #ee0979; /* fallback for old browsers */
+	background: -webkit-linear-gradient(
+		to right,
+		#ff6a00,
+		#ee0979
+	); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(
+		to right,
+		#ff6a00,
+		#ee0979
+	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	filter: blur();
+}
+
+.form {
+	padding: 30px;
+	/* background-image: url("https://i.pinimg.com/236x/a7/15/09/a7150971e9a3ce995c2d572f30c36035.jpg"); */
+	background-image: linear-gradient(
+		310deg,
+		hsl(201deg 100% 20%) 13%,
+		hsl(215deg 57% 31%) 43%,
+		hsl(238deg 32% 41%) 49%,
+		hsl(271deg 34% 43%) 50%,
+		hsl(303deg 39% 43%) 50%,
+		hsl(324deg 54% 48%) 50%,
+		hsl(336deg 71% 53%) 50%,
+		hsl(348deg 89% 58%) 51%,
+		hsl(4deg 100% 62%) 57%,
+		hsl(24deg 100% 50%) 87%
+	);
+	width: 330px;
+	height: 160px;
+}
+
+.form > label {
+	text-align: center;
+	color: white;
+}
+
+.cover {
+	background-image: url("https://i.redd.it/dr1b0j7e49t61.jpg");
+	background-size: cover;
+	width: 10vw;
+	height: 49vh;
+	display: none;
+}
+
+button {
+	background-image: linear-gradient(
+		135deg,
+		hsl(220deg 4% 15%) 13%,
+		hsl(220deg 4% 14%) 43%,
+		hsl(220deg 5% 13%) 49%,
+		hsl(220deg 5% 11%) 50%,
+		hsl(220deg 6% 10%) 50%,
+		hsl(220deg 7% 9%) 50%,
+		hsl(220deg 10% 7%) 50%,
+		hsl(219deg 16% 5%) 51%,
+		hsl(221deg 35% 3%) 57%,
+		hsl(0deg 0% 0%) 87%
+	);
+
+	color: white;
+	transition: background 1s ease-out;
+}
+
+button:hover {
+	background-image: linear-gradient(
+		225deg,
+		hsl(220deg 4% 15%) 23%,
+		hsl(220deg 4% 14%) 43%,
+		hsl(220deg 5% 13%) 49%,
+		hsl(220deg 5% 11%) 50%,
+		hsl(220deg 6% 10%) 50%,
+		hsl(220deg 7% 9%) 50%,
+		hsl(220deg 10% 7%) 50%,
+		hsl(219deg 16% 5%) 51%,
+		hsl(221deg 35% 3%) 27%,
+		hsl(0deg 0% 0%) 87%
+	);
+}
+#selected {
+	overflow-x: auto;
+	white-space: nowrap;
+	color: rgb(255, 255, 255, 0.69);
+	font-style: italic;
+	height: 2.14rem;
+	/* ===== Scrollbar CSS ===== */
+	/* Firefox */
+}
+
+.form > .container:first-of-type {
+	display: flex;
+	flex-flow: row;
+	margin-bottom: 6%;
+}

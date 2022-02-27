@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>DashBoard</title>
+
+		<script src="https://cdn.jsdelivr.net/npm/d3-dsv@3"></script>
+		<script src="https://cdn.plot.ly/plotly-2.9.0.min.js"></script>
+
+		<link rel="stylesheet" href="../static/simple_dashboard.css" />
+		<link rel="icon" href="../Media/logo.png" />
+	</head>
+	<body>
+		<header>
+			<div class="left">
+				<img src="../Media/logo.gif" / id="logoGif">
+
+				<div class="mid">
+					<span>
+						<span title="">Files:</span>
+						<span>0</span>
+					</span>
+					<span>
+						<span>Folders:</span>
+						<span>0</span>
+					</span>
+					<span>
+						<span>Languages:</span>
+						<span>0</span>
+					</span>
+				</div>
+			</div>
+			<div class="right">
+				<a id="ignore" target="_blank"> ( .* ) </a>
+			</div>
+		</header>
+		<main>
+			<article id="folderDensity"></article>
+			<article id="extensionDomaince"></article>
+		</main>
+		<!-- <div class="container-body">
+			
+				<div class="navbar-brand">
+					<a class="navbar-item"></a>
+				</div>
+				<div class="navbar-brand">
+					Entities: <span id="entities"></span>
+				</div>
+				<div class="navbar-brand">Size: <span id="size"></span></div>
+				<a class="navbar-item navbar-end" id="ignore" target="_blank">
+					<img
+						src="https://plugins.jetbrains.com/files/7495/141256/icon/pluginIcon.png"
+					/>
+				</a>
+			</nav>
+			<div class="Board">
+				<div id="folderDensity"></div>
+				<div id="extensionDominance"></div>
+				<div>
+					<canvas
+						id="TabVsSpaceOverAll"
+						aria-label="extensionDominance"
+					></canvas>
+				</div>
+			</div>
+		</div> -->
+		<script type="text/javascript" src="../Scripts/visualise.js"></script>
+		<!--		<script type="text/javascript" src="../Scripts/temp.js"></script>-->
+	</body>
+</html>

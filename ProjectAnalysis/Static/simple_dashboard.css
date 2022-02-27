@@ -1,0 +1,138 @@
+@import "./bulma.css";
+
+html {
+	overflow-y: auto;
+}
+body {
+	margin: 0%;
+}
+
+header {
+	position: sticky;
+	width: 100%;
+	height: 5%;
+	display: flex;
+	align-content: center;
+	background-image: linear-gradient(
+		130deg,
+		hsl(8deg 58% 32%) 1%,
+		hsl(8deg 58% 29%) 40%,
+		hsl(7deg 59% 26%) 48%,
+		hsl(7deg 59% 23%) 51%,
+		hsl(6deg 60% 20%) 51%,
+		hsl(6deg 63% 17%) 50%,
+		hsl(6deg 61% 17%) 50%,
+		hsl(7deg 56% 19%) 49%,
+		hsl(7deg 53% 22%) 49%,
+		hsl(8deg 51% 25%) 52%,
+		hsl(8deg 49% 28%) 60%,
+		hsl(9deg 48% 32%) 99%
+	);
+	top: 0;
+}
+
+.left,
+.mid,
+.right {
+	display: flex;
+	flex-flow: row;
+}
+.left {
+	flex-grow: 2;
+}
+
+.mid {
+	flex-grow: 2;
+	color: white;
+	justify-content: space-around;
+}
+
+.mid > span > span:first-of-type {
+	text-decoration: underline;
+}
+
+#logoGif {
+	box-sizing: border-box;
+	object-fit: cover;
+	height: 100%;
+	width: 4%;
+}
+
+#ignore {
+	box-sizing: border-box;
+	object-fit: contain;
+	font-weight: bold;
+	color: #007bff;
+	font-family: Cursive, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	text-shadow: 0 0 5px rgba(0, 123, 255, 0.7), 0 0 40px rgba(0, 123, 255, 0.7),
+		0 0 100px rgba(0, 123, 255, 0.7);
+}
+
+#ignore:hover {
+	background-color: hsl(6deg 60% 20%);
+}
+
+main {
+	width: 100%;
+	height: 100%;
+	background-color: #eb4511;
+	background-image: linear-gradient(315deg, #eb4511 0%, #b02e0c 74%);
+}
+
+article {
+	background-color: #000000;
+	background-image: linear-gradient(147deg, #000000 0%, #434343 74%);
+}
+.container-body {
+	display: flex;
+	flex-flow: column;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+.navbar {
+	background-image: linear-gradient(
+		45deg,
+		hsl(234deg 100% 8%) 0%,
+		hsl(228deg 100% 10%) 21%,
+		hsl(225deg 100% 13%) 30%,
+		hsl(225deg 100% 15%) 39%,
+		hsl(226deg 100% 18%) 46%,
+		hsl(226deg 100% 20%) 54%,
+		hsl(227deg 100% 23%) 61%,
+		hsl(228deg 100% 26%) 69%,
+		hsl(229deg 100% 28%) 79%,
+		hsl(234deg 87% 33%) 100%
+	);
+
+	box-shadow: 0px 12px 13px -2px rgba(28, 24, 24, 0.75);
+	-webkit-box-shadow: 0px 12px 13px -2px rgba(28, 24, 24, 0.75);
+	-moz-box-shadow: 0px 12px 13px -2px rgba(28, 24, 24, 0.75);
+	z-index: 2;
+}
+
+.Board {
+	background: #0f0c29; /* fallback for old browsers */
+	background: -webkit-linear-gradient(
+		to right,
+		#24243e,
+		#302b63,
+		#0f0c29
+	); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(
+		to right,
+		#24243e,
+		#302b63,
+		#0f0c29
+	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+	/* flex-grow: 2;
+	display: flex;
+	flex-flow: row wrap; */
+}
+
+.Board > div {
+	flex-grow: 1;
+	background-color: black;
+	width: 69%;
+}

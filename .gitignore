@@ -1,0 +1,23 @@
+# IDE FILES
+.vscode
+.idea
+venv
+*.pyproject.*
+
+# data files
+*/Data/*
+*.pyc
+
+# some test files
+test.py
+
+# CDN LINKS
+*/Scripts/d3.js
+*/Scripts/plotly.js
+
+*/Static/bulma.css
+
+# raw files
+*.exe
+
+*renderer.py
